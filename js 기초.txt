@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<script>
+			alert('Hello world');
+		</script>
+	</body>
+</html>
+
+태그
+script		자바스크립트를 사용할 수 있도록 만들어줌
+
+자료형
+string	'' or ""
+	' 입력할 때 \'
+	개행할 때 \n
+	문자 + 문자
+	문자.length == 길이
+number	1
+변수 선언
+	var
+
+함수
+	alert('내용');		경고창 출력
+	document.write('내용')	웹페이지에 출력
+	console.log('내용')		코솔에 출력
+	prompt('설명')	입력받기
+Math.
+	pow(3, 2)		9
+	round(10.6)	11
+	ceil(10.2)		11
+	floor(10.6)	10
+	sqrt(9)		3
+	random()		0.0 ~ 1.0
+
+== or ===
+형식이 중요함
+null === undefined //false
+null == undefined //true
+NaN === NaN // false -> 어느 하나가 NaN 이면 무조건 false
+
+조건문 맨 밑 확인하기
+
+함수 형식
+function 함수명(){
+	return ~;
+}
+var 함수명 = function(){
+	return ~;
+}
+
+반복
+	whlile == for( ~ in ~) == for(~;~;~)
+배열
+	배열.length
+
+	배열.push('~')		배열 맨 뒤에 추가
+	배열.concat('~','~')		배열 맨 뒤에 연속 추가
+	배열.unshift('~')		배열 맨 앞에 추가
+	배열.splice(요소1,요소2,'~') 	요소1번 부터 요소2번 크기만큼 지우고 요소1번 뒤에 인자를 추가
+
+	배열.shift()	맨 앞 요소 삭제
+	배열.pop()	맨 뒤 요소 삭제
+
+	배열.sort()	정렬함
+	배열.reverse()	위치를 변경함
+
+객체
+	python의 딕셔너리 + 클래스
+	var 변수명 = {key : value, key : function};
+	var 변수명 = new Object();
+		변수명.key == 변수명[key]
+
+모듈 사용하기
+	<script src ="저장파일"></script>
+	
+	node.js exports.~~			주는 쪽
+	var 변수명 = require('저장파일')	받는 쪽
+	변수명.~~			사용하기
+
+정규표현식	-문자열에서 특정 문자를 찾아내기-
+	var ~ = /a/
+			i가 붙으면	소문자 대문자 구분 X
+			g가 붙으면	검색결과가 전원 반환으로 변함
+		/(\w+)\s(\w+)/
+			\w+		문자열
+			\s		space
+			$n		n번째 요소
+			/\b(?:https?):\/\/[a-z0-9-+&@\/%?=~_|!:,.;]*/gim;
+		문자열.match(~)		exec와 동일함
+		문자열.replace(~, '~2')	~를 ~2로 변경
+	var ~ = new RegExp('a');
+		~.exec('문자열')	문자열에 있는 요소를 배열로 반환함(["a"]) 없으면 null
+		~.test('문자열')	문자열에 요소가 있으면 true 없으면 false
+
+함수를 값으로 주는 것이 가능함!
+	배열화 가능함
+	특정 함수를 불러오는 함수를 짜기 쉬워짐
+

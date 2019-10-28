@@ -1,0 +1,34 @@
+head	글에 안보이는 부분 정의하기
+body	글에 주 부분을 다루기	~= <!doctype html> html 파일인걸 알림
+html	전체 글 묶기
+title	홈페이지 이름 적기
+meta	각 정보의 설정을 함	ex) charset = "utf-8"
+div	부분 나누기
+a	다른 홈페이지로 이동하기 위한 태그	href target(새창?) title(설명)
+script
+link	
+img	사진 띄우기
+p	단락 정하기 // css 문법을 먹이기 좋음
+span
+li	list 리스트
+ul	list 묶기			~= ol (숫자를 매기면서 묶기)
+br	글 띄우기
+style
+h1	머리글 글 키우기
+h2	머리글 글 키우기
+input
+form
+strong	글 강조하기
+h3	머리글 글 키우기
+table
+tr
+td
+
+// 시각화와 홍보성을 위해 스타일을 먹이는 것보다 알맞은 태그를 사용하는 것이 좋음
+
+// 각 태그는 다양한 속성을 가질 수 있음
+//<img src = "ad.jpg" width = "100%">
+	src , width == 속성들
+
+github를 사용하여 웹호스팅하기
+아파치를 사용하여 웹호스팅하기
