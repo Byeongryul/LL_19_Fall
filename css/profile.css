@@ -1,0 +1,58 @@
+/* 전체 위치 확인 */
+html {
+    background-color:darkblue;
+    color: white;
+}
+body * {
+    border: 1px solid white;
+}
+
+header {
+    margin: 8px;
+    padding: 8px;
+}
+
+.wrapper > * {
+    padding: 8px;
+}
+
+/* 크게 3가지로 분리 */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+/* 가운대 3가지로 분리 */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+/* 해드를 크게 2분류로 나눔 */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.miniheader {
+    display: flex;
+    flex-direction: row;
+}
+
+.miniheader :nth-child(2){
+    margin: 0 16px 0 16px;
+}
+
+.minimain {
+    display: flex;
+    flex-direction: row;
+}
+
+main > div {
+    display:flex;
+    flex-direction: column;
+}
+
+.minimain > div{
+    display:flex;
+    flex-direction: column;
+}
